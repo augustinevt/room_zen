@@ -1,0 +1,17 @@
+
+<% if @house.errors.any? %>
+  <%= @house.errors.full_messages.each do |error| %>
+  <h1><%= error %></h1>
+  <%end%>
+<%end%>
+
+
+<%= form_for @house do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+
+  <%= f.submit %>
+<%end%>
