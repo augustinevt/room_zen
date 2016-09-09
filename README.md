@@ -1,24 +1,42 @@
-# README
+# Room Zen
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### A civilized approach to renting and searching for house shares.
 
-Things you may want to cover:
+#### By August von Trapp
 
-* Ruby version
+## Description
 
-* System dependencies
+An app that aims to make the search for a good house or housemate as simple and stress free as possible.
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+* Go to [github](https://github.com/augustinevt/room_zen) and clone the repository
 
-* Database initialization
+## Please be sure that:
+* All gem dependencies are bundled
+* Postgresql is running
+* rake db:create, rake db:migrate and rake db:test:prepare are run before launching the server
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Known Bugs
 
-* Deployment instructions
+There are no known bugs.
 
-* ...
+## Support and contact details
+
+Contact me at augustvontrapp@gmail.com
+
+## Technologies Used
+
+* ruby
+* rspec/capybara
+* postgres
+* Ruby on Rails -v 5.0.0.1
+* CSS
+* HTML
+* JavaScript
+* jQuery
+
+### License
+
+Copyright (c) 2016 August von Trapp
