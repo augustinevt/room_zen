@@ -33,7 +33,7 @@ Contact me at augustvontrapp@gmail.com
 * postgres
 * Ruby on Rails -v 5.0.0.1
 * CSS
-* HTML
+* HTMLÂ
 * JavaScript
 * jQuery
 
