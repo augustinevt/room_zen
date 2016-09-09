@@ -27,6 +27,11 @@ describe 'The users feature' do
     expect(page).to have_content('Sasaki Kojiro')
   end
 
-
+  it "should allow a user to delete a user" do
+    user = User.create(username: "foo")
+    visit user_path(user)
+    click_on "Delete"
+    expect(page).not_to have_content('foo')
+  end
 
 end
