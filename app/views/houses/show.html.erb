@@ -3,5 +3,8 @@
 <h1><%= @house.title %></h1>
 <h3><%= @house.address %></h3>
 
+<%= link_to "Apply", new_house_request_path(@house) %>
+
 <%= link_to "Edit", edit_house_path(@house)%>
+<%= link_to "Return To Houses", houses_path%>
 <%= link_to "Delete", house_path(@house), data: {confirm: "Are you sure?", method: :delete}%>

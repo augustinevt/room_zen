@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'houses#index'
   resources :users
-  resources :houses
+  resources :sessions
+
+  resources :houses do
+    resources :requests
+  end
 end

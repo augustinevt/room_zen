@@ -16,8 +16,10 @@ class HousesController < ApplicationController
     @house = House.new(house_params)
     @house.user_id = User.first.id
     if @house.save
+      flash[:notice] = "House was saved successfully"
       redirect_to @house
     else
+      flash[:alert] = "House was not saved!"
       render :new
     end
   end
@@ -29,8 +31,10 @@ class HousesController < ApplicationController
   def update
     @house = House.find(params[:id])
     if @house.update(house_params)
+      flash[:notice] = "House was update successfully"
       redirect_to @house
     else
+      flash[:alert] = "House was not saved!"
       render :edit
     end
   end
